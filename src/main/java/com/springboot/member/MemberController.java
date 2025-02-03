@@ -27,7 +27,7 @@ public class MemberController {
         memberService.createMember(member);
 
         System.out.println("Member Registration Successfully");
-        return "login";
+        return "login"; //login page로 보냄
     }
 
     @GetMapping("/my-page")

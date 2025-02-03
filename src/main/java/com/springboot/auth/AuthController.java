@@ -13,6 +13,10 @@ public class AuthController {
         return "login";
     }
 
+    @GetMapping("/access-denied") //접근 권한이 없는 계정으로 로그인 했다.
+    public String accessDinied() {
+        return "access-denied";
+    }
 
     @PostMapping("/login")
     public String login() {
