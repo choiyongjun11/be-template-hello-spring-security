@@ -32,7 +32,6 @@ public class HelloAuthorityUtils {
         }
     }
 
-
     public List<GrantedAuthority> createAuthorities(List<String> roles) {
         //List를 순회하며 String을 GrantedAuthority로 바꿔서 모두 다시 List로 패키징 후 반환
         return roles.stream()
